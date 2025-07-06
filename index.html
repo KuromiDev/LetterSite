@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Animal Crossing Letters</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/images/face.svg" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="box box1">
+            <div class="inner-box red-box">
+                <div class="red-overlay-message" id="red-overlay-message">This is where your letter will be displayed! Upon submitting a new message, this text will be replaced!</div>
+            </div>
+            <div class="inner-box purple-box">
+                <div class="thumbnail-grid" id="thumbnail-grid"></div>
+            </div>
+            
+        </div>
+        <div class="box box2">
+            <div class="lower-box box-a">
+                <div class="message-container">
+                    <label for="message-input">Message:</label>
+                    <textarea id="message-input" placeholder="Type your message..."></textarea>
+                    <button id="submit-button">Submit</button>
+                </div>
+            </div>
+            <div class="lower-box box-b">
+                <div class="font-selector">
+                    <label for="font-select">Select Font:</label>
+                    <select id="font-select">
+                        <option value="Arial, sans-serif">Arial</option>
+                        <option value="'Courier New', monospace">Courier New</option>
+                        <option value="'Georgia', serif">Georgia</option>
+                        <option value="'Times New Roman', serif">Times New Roman</option>
+                        <option value="'Comic Sans MS', cursive">Comic Sans</option>
+                    </select>
+                </div>
+                
+                <div class="color-selector">
+                    <label for="color-select">Select Font Color:</label>
+                    <select id="color-select">
+                        <option value="#000000">Black</option>
+                        <option value="#FF0000">Red</option>
+                        <option value="#0000FF">Blue</option>
+                        <option value="#008000">Green</option>
+                        <option value="#FFA500">Orange</option>
+                        <option value="#800080">Purple</option>
+                        <option value="#FFFFFF">White</option>
+                    </select>
+                </div>
+            </div>
+            <div class="lower-box box-c">
+                <button id="save-redbox-btn">Save Letter as Image</button>
+            </div>
+        </div>
+    </div>
+    
+<script src="scripts.js"></script>
+</body>
+</html>
